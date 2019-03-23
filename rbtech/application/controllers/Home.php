@@ -65,10 +65,7 @@ class Home extends CI_Controller {
 			if($this->email->send()){
 				$const['formerrors'] = "<p class='alert alert-success'>Email enviado com sucesso!</p>";
 			} else {
-				$const['formerrors'] = $this->email->print_debugger();
-			}
-	
-			
+				$const['formerrors'] = "<p class='alert alert-danger'>Falha ao tentar enviar email</p>"
 
 		}
 		//passando valores
