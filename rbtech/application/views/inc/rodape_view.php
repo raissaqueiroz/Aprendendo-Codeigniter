@@ -1,7 +1,17 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 
+		<!-- RODAPÉ -->
+
+        <div class="container-fluid bg-secondary">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 text-center text-white  my-3">
+						<h6 class="col-12">Todos os Direitos Reservados.</h3>
+					</div>
+				</div>
 			</div>
-      	</main>
+		</div>
+		<!-- /RODAPÉ -->
 
 		<!--Bootstrap-->
 

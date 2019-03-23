@@ -1,0 +1,11 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+<div class="container-fluid">
+    <div class="container">
+        <div class="row my-5">
+            <h1 class="lead display-3 my-5"> Clientes </h1>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse iaculis lacus tempus risus dictum iaculis. Cras interdum tortor eget nunc fermentum auctor. Proin convallis hendrerit dapibus. Nulla semper dui sem, scelerisque mattis lectus hendrerit ut. Pellentesque ut felis libero. Suspendisse vel orci congue, congue lacus eget, hendrerit tellus. Donec sit amet ultrices ligula, at sollicitudin nulla. Cras ullamcorper semper metus eget elementum. Aliquam congue ex vel dolor commodo, et rhoncus massa efficitur.</p>
+            <p class="lead">Pellentesque accumsan odio sit amet est pellentesque rhoncus. Curabitur id enim massa. Vestibulum facilisis facilisis lectus, eu eleifend quam congue sit amet. Proin vehicula leo ut sapien pharetra, mollis placerat sapien pharetra. Nulla tincidunt et ante facilisis ornare. Morbi quis luctus eros. Suspendisse eget mi purus. Curabitur vitae elit sed nisl mollis sodales a ut magna. Suspendisse suscipit, est a commodo maximus, augue libero pulvinar quam, sed ullamcorper elit lorem vitae nisi. Cras eget condimentum felis, sit amet viverra nibh. Maecenas nisi odio, suscipit eget ultrices quis, tincidunt nec metus.</p>
+            <p class="lead">Vestibulum tempor orci at justo lacinia, ac commodo justo aliquam. Vestibulum at diam vehicula ligula vestibulum sodales. Etiam ut nisl vitae erat porta commodo consectetur nec purus. Nulla nec ligula id metus eleifend porttitor vitae mattis ipsum. Fusce feugiat sit amet tellus vel semper. In vitae diam pretium, tincidunt velit ac, varius tortor. Fusce luctus quam ante. Vestibulum dignissim vel nunc vitae sollicitudin. Cras id libero id eros tristique lobortis eget non sapien. Aenean posuere luctus pharetra. In viverra elit tellus, vel fringilla urna volutpat sed.</p>
+        </div>
+    </div>
+</div>
