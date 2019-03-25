@@ -1,11 +1,12 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-date_default_timezone_set("BRAZIL/EAST");
+
 class Home extends CI_Controller {
 
 	function __construct(){
 		parent::__construct();
 		//aqui vai entrar meus models
+		$this->load->model('opcao_model', 'opcao');
 	}
 	/****************************************************
 	 *      		Página Inicial						*
@@ -13,8 +14,7 @@ class Home extends CI_Controller {
 	public function index(){
 		//passando valores
 		$const['titulo'] = "RBTech | Página Inicial";
-		$const['logo'] = "LOGO DO SITE";
-
+		$const['logo'] = $this->opcao->getOpcao('nome_site', 'LOGO DO SITE');
 		//método padrão do controller
 		$this->load->view('inc/topo_view', $const);
 		$this->load->view('home_view');
@@ -27,8 +27,7 @@ class Home extends CI_Controller {
 	public function clientes(){
 		//passando valores
 		$const['titulo'] = "RBTech | Clientes";
-		$const['logo'] = "LOGO DO SITE";
-
+		$const['logo'] = $this->opcao->getOpcao('nome_site', 'LOGO DO SITE');
 		//método padrão do controller
 		$this->load->view('inc/topo_view', $const);
 		$this->load->view('clientes_view');
@@ -65,13 +64,12 @@ class Home extends CI_Controller {
 			if($this->email->send()){
 				$const['formerrors'] = "<p class='alert alert-success'>Email enviado com sucesso!</p>";
 			} else {
-				$const['formerrors'] = "<p class='alert alert-danger'>Falha ao tentar enviar email</p>"
-
+				$const['formerrors'] = $this->email->print_debugger();
+			}
 		}
 		//passando valores
 		$const['titulo'] = "RBTech | Contato";
-		$const['logo'] = "LOGO DO SITE";
-
+		$const['logo'] = $this->opcao->getOpcao('nome_site', 'LOGO DO SITE');
 		//método padrão do controller
 		$this->load->view('inc/topo_view', $const);
 		$this->load->view('contato_view');
